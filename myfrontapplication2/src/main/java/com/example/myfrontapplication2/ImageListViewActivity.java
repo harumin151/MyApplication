@@ -41,11 +41,21 @@ public class ImageListViewActivity extends Activity {
         Resources r = getResources();
         Bitmap bmp = BitmapFactory.decodeResource(r, R.drawable.umaru);
 
-        //データベースに1件登録する
-        dao.insertcontactinformation("てすと", "静岡県清水区江尻東1丁目１－２９", "めも", bmp);
+        Bitmap bmp2 = BitmapFactory.decodeResource(r, R.drawable.umaru2);
+
         cList = new ArrayList<Contactinformation>();
-        //データベースからデータを全件取得
-        cList = dao.select();
+
+        //データベース消す
+        db.delete("ContactinformationTable",null,null);
+
+
+        //データベースに登録する
+            dao.insertcontactinformation("ゆーと", "静岡県清水区江尻東1丁目１－２９", "めも", bmp);
+            dao.insertcontactinformation("はる","静岡県藤枝市高柳3丁目１－３５","メモ",bmp2);
+        //取得する
+            cList = dao.select();
+
+
 
 
         // adapterのインスタンスを作成
