@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
  */
 
 public class Contactinformation  {
+    //元々あったデータもあるけど、使ってるのはpictureとnameだよ
     int No;
     String name;
     String location;

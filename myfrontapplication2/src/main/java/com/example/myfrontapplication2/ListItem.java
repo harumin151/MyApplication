@@ -8,12 +8,14 @@ import java.sql.Blob;
  * Created by Panda on 2018/01/24.
  */
 
+
+
 //画像のリソースIDと文字を格納するクラスでリストの１行の情報を格納するためのクラス
 
 
 
 public class ListItem {
-
+//うまるちゃんと名前
     private String name = null;
     private Bitmap picture = null;
 

@@ -59,6 +59,7 @@ public class ContactInformationDAO extends AppCompatActivity {
 
     }
 
+    //データベースから全権取得するメソッド
     public ArrayList<Contactinformation> select() {
         String[] columns = new String[]{"No", "name", "location", "memo", "picture"};
         Cursor ret;

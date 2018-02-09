@@ -39,11 +39,11 @@ public class ImageArrayAdapter extends ArrayAdapter<Contactinformation> {
 
         Contactinformation item = this.items.get(position);
 
-        // テキストをセット
+        // Listviewの名前
         TextView appInfoText = (TextView)view.findViewById(R.id.item_name);
         appInfoText.setText(item.getName());
 
-        // アイコンをセット
+        // アイコンをセット（うまるちゃん）
         ImageView appInfoImage = (ImageView)view.findViewById(R.id.item_image);
         appInfoImage.setImageBitmap(item.getPicture());
 
